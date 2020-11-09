@@ -1,0 +1,24 @@
+<div id="masterlogin" data-page="masterlogin" class="page">
+	<div id="login">
+		<div id="contentLogin" class="nohayquemover aver" style=" text-align: center; ">
+			<img src="resources/img/tramarsa.png" style="width: 14em;">
+			<div class="titleLoginUser">
+				<div class="titleLU">Usuario</div>
+				<input type="text" class="input" value="" maxlength="25" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="username">
+				<a class="validationInputMessage"></a>
+			</div>
+			<div class="titleLoginPassword">
+				<div class="titleLU">Password</div>
+				<input type="password" class="input" maxlength="25" unselectable="on" onselectstart="return false;"  value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="password">
+				<a class="validationInputMessage"></a>
+			</div>
+			<div class="titleLoginButton">
+				<a href="#" class="button button-fill button-big button-raised confirm-create-inpeccion color-blue" id="btnIngresarLogin" filter-notEmpty="#username,#password">INGRESAR</a>
+			</div>
+		</div>
+	</div>
+	<div id="loginBackground"></div>
+	
+	<!--demo-->
+    <script>Main.loadActivity('loginActivity');</script>
+</div>

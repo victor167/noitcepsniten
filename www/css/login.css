@@ -1,0 +1,93 @@
+
+/*LOGIN*/
+.views.masterlogin
+{
+    z-index: 10000;
+}
+#masterlogin {
+    display: none;
+}
+#masterlogin #loginBackground{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+}
+#masterlogin #login{
+    position: relative;
+    z-index: 1;
+}
+#masterlogin #contentLogin
+{
+    padding: 20px;
+    margin-top: 80px;
+}
+@media screen and (orientation:landscape) {
+    #masterlogin #contentLogin
+    {
+        padding: 20px;
+        margin-top: 20px;
+    }
+}
+#masterlogin #titleLogin
+{
+    color: #9E9E9E;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+#masterlogin #contentLogin #username,#masterlogin #contentLogin #password{
+    font-size: 1.1em;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #9E9E9E;
+    background: none;
+    color: #565656;
+    height: 25px;
+    z-index: 1;
+    position: relative;
+}
+#masterlogin .titleLoginUser,#masterlogin .titleLoginPassword{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#masterlogin .titleLoginPassword{
+    margin-top: 20px;
+}
+#masterlogin .titleLoginUser.active .titleLU,#masterlogin .titleLoginPassword.active .titleLU
+{
+    font-size: 0.6em;
+    margin-top: -14px;
+}
+#masterlogin .titleLU{
+    font-size: 1.1em;
+    margin-bottom: -22px;
+    color: rgb(167, 167, 167);
+    position: absolute;
+    transition: all 0.2s;
+    margin-top: 4px;
+}
+#masterlogin #btnIngresarLogin{
+    background: #00BCD4;
+    border: 0;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    color: white;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+#masterlogin .validationInputMessage{
+    font-size: 0.7em;
+    margin-top: 2px;
+    color: #F44336;
+    display: none;
+    float: right;
+}
+#masterlogin .titleLoginUser.validationInputError .input{
+    border-color: #F44336!important;
+}

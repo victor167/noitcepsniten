@@ -1,0 +1,120 @@
+<div id="nuevaInspeccion" data-page="nuevaInspeccion" class="page page-on-center">
+	<div class="navbar">
+		<div class="not-conection">Sin conexión a Internet</div>
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link icon-only">
+					<i class="material-icons md-24" >&#xE5C4;</i>
+				</a>
+			</div>
+			<div class="center">Nueva Inspeccion</div>
+			<div class="right">
+				<div class="sk-fading-circle sync-pending">
+					<div class="sk-fading-title">-</div>
+					<div class="sk-circle1 sk-circle"></div>
+					<div class="sk-circle2 sk-circle"></div>
+					<div class="sk-circle3 sk-circle"></div>
+					<div class="sk-circle4 sk-circle"></div>
+					<div class="sk-circle5 sk-circle"></div>
+					<div class="sk-circle6 sk-circle"></div>
+					<div class="sk-circle7 sk-circle"></div>
+					<div class="sk-circle8 sk-circle"></div>
+					<div class="sk-circle9 sk-circle"></div>
+					<div class="sk-circle10 sk-circle"></div>
+					<div class="sk-circle11 sk-circle"></div>
+					<div class="sk-circle12 sk-circle"></div>
+				</div>
+                <i class="material-icons sync-complete">&#xE2BF;</i>
+            </div>
+		</div>
+	</div>
+
+	<div class="page-content">
+		<div class="page-content-load"><div class="spinner2"><div class="cube1"></div><div class="cube2"></div></div></div>
+		<div class="list-block">
+			<ul>
+				<li>
+				    <div class="open-popover open-popover-nave" data-popover=".popover-nave">
+				        <i class="material-icons"></i>
+				    </div>
+				    <div id="acs_barco_2" class="list-block inputs-list">
+				        <a class="item-content txt_naves">
+				            <div class="item-inner">
+				                <div class="item-title floating-label">Nave</div>
+				                <div class="item-input item-input-field">
+				                    <input type="text" placeholder="" class="" id="acs_nave_2_text">
+				                </div>
+				            </div>
+				        </a>
+				    </div>
+				    <a href="#" id="acs_barco" class="visible item-link item-content autocomplete-opener">
+				        <input type="hidden" value="">
+				        <div class="item-inner">
+				            <div class="item-title">Nave</div>
+				            <div class="item-after"></div>
+				            <i class="material-icons item-select-icon">&#xE315;</i>
+				        </div>
+				    </a>
+				</li>
+
+				<li>
+				    <div class="open-popover open-popover-capitan" data-popover=".popover-capitan">
+				        <i class="material-icons"></i>
+				    </div>
+				    <div id="acs_capitan_2" class="list-block inputs-list">
+				        <a class="item-content txt_naves">
+				            <div class="item-inner">
+				                <div class="item-title floating-label">Capitan</div>
+				                <div class="item-input item-input-field">
+				                    <input type="text" placeholder="" class="" id="acs_capitan_2_text">
+				                </div>
+				            </div>
+				        </a>
+				    </div>
+				    <a href="#" id="acs_capitan" class="visible item-link item-content autocomplete-opener">
+				        <input type="hidden" value="">
+				        <div class="item-inner">
+				            <div class="item-title">Capitan</div>
+				            <div class="item-after"></div>
+				            <i class="material-icons item-select-icon">&#xE315;</i>
+				        </div>
+				    </a>
+				</li>
+
+                <li>
+                    <a href="#" class="item-link smart-select" data-back-on-select="true">
+                        <select name="types" class="smart-select-type-inspection"></select>
+						<div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">Tipo</div>
+                                <div class="item-after smart-select-value"></div>
+                                <i class="material-icons item-select-icon">&#xE315;</i>
+                            </div>
+                        </div>
+					</a>
+                </li>
+
+                <li>
+                    <a href="#" class="item-link smart-select" data-back-on-select="true">
+                        <select name="types" class="smart-select-sede"></select>
+						<div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">Sede</div>
+                                <div class="item-after smart-select-value"></div>
+                                <i class="material-icons item-select-icon">&#xE315;</i>
+                            </div>
+                        </div>
+					</a>
+                </li>
+
+                <li>
+                	<div class="content-block">
+                		<a href="#" class="button button-fill button-big button-raised confirm-create-inpeccion" id="btnCreateInspection">Iniciar Inspeccion</a>
+                	</div>
+                </li>
+
+			</ul>
+		</div>
+	</div>
+	<script>Main.loadActivity('nuevaInspeccionActivity');</script>
+</div>

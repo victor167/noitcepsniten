@@ -1,0 +1,66 @@
+{{#questions}}
+	<div class="swiper-slide">
+		<input type="hidden" name="id_inspsurvques" value="{{id_inspsurvques}}">
+		<input type="hidden" name="id_inspusersurvques" value="{{id_inspusersurvques}}">
+		<!--<div class="item-num-inspsurvques">{{nroinspusersurvques}}</div>-->
+		<div class="inpsurvques_decription">{{tx_inpsurvques_decription}}</div>
+		<div class="list-block list-block-question" style="height: 380px; margin: 0;">
+			<ul style="height: 100%; /*background: #f4f4f4;*/overflow: auto;">
+				{{#options}}
+					<li class="certificados-color {{isDisabled}} certificados-color-n1">
+						<label class="label-radio item-content">
+							<input type="radio" class="radiocertificados" {{#is1}} checked {{/is1}} name="radiocertificados" value="1">
+							<div class="item-media">
+								<i class="icon icon-form-radio"></i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">Si tiene</div>
+							</div>
+						</label>
+					</li>
+					<li class="certificados-color {{isDisabled}} certificados-color-n2">
+						<label class="label-radio item-content">
+							<input type="radio" class="radiocertificados" {{#is2}} checked {{/is2}} name="radiocertificados" value="2">
+							<div class="item-media">
+								<i class="icon icon-form-radio"></i>
+							</div>
+							<div class="item-inner">
+								<div class="item-title">No tiene</div>
+							</div>
+						</label>
+					</li>
+				{{/options}}
+			</ul>
+		</div>
+		<div class="list-block" style=" margin: 0; border-top: 1px solid #CCC;">
+			<ul>
+				<li class="row {{isClassValueSelectedInspection}}">
+					<div style="display:block-inline;" class="col-20 rowa-comment-photo-embed {{isDisabled}}x" href="layout/fotoComentInspeccion.html?tipo=Editar">
+						<div style="padding: 0px 5px;overflow: auto;">
+							<a class="countComment" style="float: left;">0</a>
+							<i class="material-icons" style="color: #5b5b5b;float: right;">&#xE0B9;</i>
+						</div>
+						<div style="padding: 0px 5px;overflow: auto;">
+							<a class="countFiles" style="float: left;">0</a>
+							<i class="material-icons" style="color: #5b5b5b;float: right;">&#xE410;</i>
+						</div>
+					</div>
+					<a href="#" class="col-80 item-link smart-select item-smart-select-apply-inspection" data-back-on-select="true">
+                        <select name="types" class="smart-select-apply-inspection">
+                        	<option value="0" {{isNotSelected}}>Seleccione</option>
+                        	<option value="1" {{isApply}}>Aplica</option>
+                        	<option value="2" {{isNotApply}}>No aplica</option>
+                        </select>
+						<div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">¿Aplica?</div>
+                                <div class="item-after smart-select-value">{{isValueSelected}}</div>
+                                <i class="material-icons item-select-icon"></i>
+                            </div>
+                        </div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+{{/questions}}

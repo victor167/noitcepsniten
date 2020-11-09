@@ -1,0 +1,117 @@
+#listInspector .item-media{
+    text-align: center;
+    border: 7px solid #8BC34A;
+    width: 30px;
+    min-width: 30px;
+    height: 25px;
+    border-radius: 83px;
+    line-height: 30px;
+    padding: 0!important;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+    color: #ffffff;
+}
+#listInspector .item-media.sync{
+    background: #8BC34A;
+}
+#listInspector .item-media.not-send.sync{
+    background: #FFEB3B;
+}
+#listInspector .item-media.not-send{
+    border: 7px solid #FFEB3B;
+}
+.calendar-inspector .picker-modal-inner{
+    display: none;
+}
+.calendar-inspector .picker-footer{
+    display: none;
+}
+#listInspector .item-title-row{
+    padding: 0;
+    background: none;
+}
+
+#listInspector .item-title{
+    left: 20px;
+    color: #545454;
+}
+#listInspector .item-glob{
+    float: left;
+    background: #8BC34A;
+    width: 10px;
+    height: 100%;
+}
+#listInspector .item-glob.not-send{
+    background: #FFEB3B;
+}
+#listInspector .insp-type{
+    font-size: 0.6em;
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 16px;
+    color: #969696;
+}
+#listInspector .tabbar-fixed .page-content,#listInspector .toolbar-fixed .page-content {
+    padding-top: 0!important;
+}
+#listInspector.list-block{
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.calendar-inspector{
+    height: 192px!important;
+}
+.calendar-inspector .toolbar{
+    height: 96px;
+}
+.calendar-inspector .toolbar-inner{
+    display: block;
+}
+.calendar-inspector .picker-calendar-month-picker,.calendar-inspector .picker-calendar-year-picker{
+    width: 100%!important;
+    max-width: 100%!important;
+}
+#listInspector .item-subtitle{
+    padding-left: 20px;
+    color: #545454;
+}
+#listInspector .item-after.date{
+    margin-top: -25px;
+    margin-right: -35px;
+}
+#listInspector.list-block .item-link .item-inner{
+    background: none;
+}
+#listOptions{
+    margin: 0px;
+}
+#listOptions .item-content .item-inner{
+    background: 0;
+    padding: 0;
+    padding-left: 10px;
+    min-height: 52px;
+}
+#listOptions .item-content{
+    padding: 0;
+}
+#panelOpcions .panel{
+    width: 300px!important;
+}
+#panelOpcions .page-content{
+    padding-top: 0!important;
+}
+#panelOpcions .navbar{
+    display: none;
+}
+#panelOpcions .page{
+    background: #f1f1f1;
+}
+#panelOpcions ul li{
+    background: white;
+}
+
+.btnSendInspeccion[data-type="4"]{
+    display:none;
+}

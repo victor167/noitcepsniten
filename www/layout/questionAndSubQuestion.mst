@@ -1,0 +1,41 @@
+<div class="swiper-slide">
+	<div class="list-block" style="margin: 0px;"> 
+		<ul>
+			{{#questions}}
+				{{#nu_inspsurvques_son}}
+					<li class="rowquestionandquestion">
+						<a href="layout/preguntasInspeccion.html#{{nu_inspsurvques_level}}_{{id_inspsurvques}}" data-context='{"tx_inpsurvques_decription":"{{tx_inpsurvques_decription}}","id_inspsurvques": "{{id_inspsurvques}}","id_inspusersurvques": "{{id_inspusersurvques}}","minmax":"{{nu_inspsurvques_level}}","id_inspsurv":"{{id_inspsurv}}"}' class="item-link">
+							<div class="item-content">
+								<div class="item-media">
+									<span class="badge questionBadgeQuestion empty" id="{{id_inspsurvques}}"></span>
+								</div>
+								<div class="item-inner">
+									<div class="item-title">{{tx_inpsurvques_decription}}</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				{{/nu_inspsurvques_son}}
+				{{^nu_inspsurvques_son}}
+					<li class="rowquestion" data-idinspsurvques="{{id_inspsurvques}}" data-idinspsurv="{{id_inspsurv}}" data-idinspusersurvques="{{id_inspusersurvques}}">
+						<a class="questionInspectionCell item-link">
+						<div class="item-content">
+								<div class="item-media">
+								    {{#applyoptiontext}}
+									    <span class="badge questionBadge empty material-icons {{applyoptiontext}}" id="{{id_inspsurvques}}"></span>
+								    {{/applyoptiontext}}
+                                    {{^applyoptiontext}}
+                                        <span class="badge questionBadge empty material-icons {{applyoptiontext}}" id="{{id_inspsurvques}}">edit</span>
+								    {{/applyoptiontext}}
+								</div>
+								<div class="item-inner">
+									<div class="item-title">{{tx_inpsurvques_decription}}</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				{{/nu_inspsurvques_son}}
+			{{/questions}}
+		</ul>
+	</div>
+</div>

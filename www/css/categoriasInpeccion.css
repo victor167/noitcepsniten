@@ -1,0 +1,88 @@
+.content-block-title.title-category{
+    margin: 10px 10px 10px!important;
+    padding: 0 0;
+}
+
+#listCategoryInpection li.check{
+    border-right: 4px solid #828282;
+}
+.page.readonly .title-category{
+    margin-top: 30px!important;
+}
+#listCategoryInpection{
+    margin: 5px 0;
+    font-size: 1em;
+}
+#listCategoryInpection>ul>li{
+    margin-top: -1px;
+    border-top: 1px solid #efecec;
+    border-bottom: 1px solid #efecec;
+}
+#listCategoryInpection>ul>li>a>div.item-content{
+    min-height: 44px;
+    height: 44px;
+}
+#listCategoryInpection li.lleno{
+    background: rgb(222, 249, 223);
+}
+#listCategoryInpection .item-media{
+    height: 100%;
+    position: absolute;
+    min-width: 4px;
+    margin: 0;
+    padding: 0;
+}
+#listCategoryInpection .badge {
+    width: 40px;
+    line-height: 44px;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0;
+    border-radius: 2px;
+    color: white;
+}
+#listCategoryInpection .item-content{
+    padding: 0;
+    margin: 0;
+    min-height: 44px;
+    height: 44px;
+}
+#listCategoryInpection .item-inner{
+    padding-left: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: #717171;
+}
+.SubNavbarInfo{
+    font-size: 0.8em;
+    display: block;
+    height: 44px;
+    line-height: 20px;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    margin: 0;
+}
+.SubNavbarInfo .subnavbar-info{
+    padding: 0;
+    padding-left: 5px;
+    font-size: 0.8em;
+    padding-bottom: 4px;
+    height: 40px;
+    overflow: hidden;
+}
+.SubNavbarInfo .subnavbar-info .title{
+float:left; width: 70px;
+}
+.SubNavbarInfo .subnavbar-info-type{
+float: right;padding: 12px 20px;
+}
+.SubNavbarInfo .subnavbar-info-type .type-title{
+position: absolute; font-size: 0.7em; margin-top: -6px; margin-left: -5px; 
+}
+.SubNavbarInfo .subnavbar-info-type .type-content{
+margin-top: 8px;
+}
+.title-ship::before, .title-captain::before {
+    content: ": ";
+}

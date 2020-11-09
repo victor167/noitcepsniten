@@ -1,0 +1,42 @@
+<div data-page="inspector" class="page no-swipeback" >                   
+    <div class="navbar">
+        <div class="not-conection">Sin conexión a Internet</div>
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="#" class="open-panel link icon-only">
+                    <i class="material-icons">&#xE5D2;</i>
+                </a>
+            </div>
+            <div class="center">Mis inspecciones</div>
+            <div class="right">
+                <div class="sk-fading-circle sync-pending">
+                    <div class="sk-fading-title">-</div>
+                    <div class="sk-circle1 sk-circle"></div>
+                    <div class="sk-circle2 sk-circle"></div>
+                    <div class="sk-circle3 sk-circle"></div>
+                    <div class="sk-circle4 sk-circle"></div>
+                    <div class="sk-circle5 sk-circle"></div>
+                    <div class="sk-circle6 sk-circle"></div>
+                    <div class="sk-circle7 sk-circle"></div>
+                    <div class="sk-circle8 sk-circle"></div>
+                    <div class="sk-circle9 sk-circle"></div>
+                    <div class="sk-circle10 sk-circle"></div>
+                    <div class="sk-circle11 sk-circle"></div>
+                    <div class="sk-circle12 sk-circle"></div>
+                </div>
+                <i class="material-icons sync-complete">&#xE2BF;</i>
+            </div>
+        </div>
+    </div>
+
+    <a href="layout/nuevaInspeccion.html" id="btnNewInspeccion" class="floating-button color-red"><i class="material-icons">&#xE145;</i></a>
+
+    <div class="page-content">
+        <div class="page-content-load"><div class="spinner2"><div class="cube1"></div><div class="cube2"></div></div></div>
+        <div class="list-block" id="listInspector">
+            <ul></ul>
+        </div>
+    </div>
+    <!--demo-->
+    <script>Main.loadActivity('inspectorActivity');Main.backgroundTopHide();</script>
+</div>

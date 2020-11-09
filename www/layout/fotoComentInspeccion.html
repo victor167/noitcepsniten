@@ -1,0 +1,106 @@
+<div id="foto-coment-inspeccion" data-page="foto-coment-inspeccion" class="page">
+	
+	<div id="divUpload" style="display: none;">
+		<div style=" padding: 15px; ">
+			<a style=" color: #717171; ">Subiendo 1 foto.</a>
+			<div style=" padding-right: 40px; ">
+				<div class="progressbar" data-progress="0">
+					<span style="transform: translate3d(-10%, 0px, 0px);"></span>
+				</div>
+			</div>
+			<div class="cancelUploadPhoto" data-id="">
+				<i class="material-icons md-18">close</i>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbar">
+		<div class="not-conection">Sin conexión a Internet</div>
+        <div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link icon-only">
+					<i class="material-icons md-24" >&#xE5C4;</i>
+				</a>
+			</div>
+			<div class="center tx_inspsurv_title"></div>
+			<div class="right">
+				<div class="sk-fading-circle sync-pending">
+					<div class="sk-fading-title">-</div>
+					<div class="sk-circle1 sk-circle"></div>
+					<div class="sk-circle2 sk-circle"></div>
+					<div class="sk-circle3 sk-circle"></div>
+					<div class="sk-circle4 sk-circle"></div>
+					<div class="sk-circle5 sk-circle"></div>
+					<div class="sk-circle6 sk-circle"></div>
+					<div class="sk-circle7 sk-circle"></div>
+					<div class="sk-circle8 sk-circle"></div>
+					<div class="sk-circle9 sk-circle"></div>
+					<div class="sk-circle10 sk-circle"></div>
+					<div class="sk-circle11 sk-circle"></div>
+					<div class="sk-circle12 sk-circle"></div>
+				</div>
+                <i class="material-icons sync-complete">&#xE2BF;</i>
+            </div>
+		</div>
+		<div class="subnavbar SubNavbarInfo"> 
+			<div class="subnavbar-info">
+				<div id="observation-icon" class="material-icons">&#xE253;</div>
+				<div class="title">Nave</div>
+				<div class="title-ship"></div>
+				<div class="title">Capitán</div>
+				<div class="title-captain"></div>
+			</div>
+			<div class="modeReadonly">Modo lectura</div>
+		</div>
+    </div>
+
+
+
+    <div class="content-obs-photos page-content with-subnavbar hide-bars-on-scroll">
+		<div class="page-content-load"><div class="spinner2"><div class="cube1"></div><div class="cube2"></div></div></div>
+    	<div class="content-block content-block-observation invible">
+    		<div class="item-title label">Observacion</div>
+    		<div class="list-block inputs-list" style=" margin: 10px 0 0 0; ">
+				<div class="item-input">
+					<textarea class="resizable" id="textComent"></textarea>
+				</div>
+				<div class="content-block" style="padding: 0;margin: 10px 0;">
+					<a href="#" disabled class="button button-fill color-blue" id="btnSaveObservation">GUARDAR OBSERVACION</a>
+				</div>
+			</div>
+    	</div>
+    	
+		<div id="disk_space_used" class="content-block" style="display: none;">
+		    <i class="material-icons cloud_icon">&#xE2BE;</i>
+		    <div class="cloud_content">
+		        <div class="cloud_content_title">Almacenamiento de NetInspection</div>
+		        <div class="ks-spaceused-progressbar-inline">
+		            <p>
+		                <span data-progress="10" class="progressbar">
+		                    <span style="transform: translate3d(-90%, 0px, 0px);"></span>
+		                </span>
+		            </p>
+		        </div>
+		        <div class="cloud_content_subtitle">16.98MB de 40MB usados</div>
+		    </div>
+		</div>
+		
+		<div class="content-block">
+			<!--<div class="list-block  inputs-list">-->
+				<div class="item-title label">Fotos</div>
+				<div class="embed-foto">
+					<!--<div class="photo_not_found" style=" color: rgba(0, 0, 0, 0.79); font-size: 14px; margin-top: -10px; background: #f1f1f1; padding: 10px; ">No se ha adjuntado ninguna foto</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+
+    </div>
+
+    <script>Main.loadActivity('fotoComentInspeccionActivity');</script>
+</div>
+
+					<!--<div class="item-input">
+						<a href="#" class="button button-fill color-blue">
+				        	Agregar foto
+				        </a>
+					</div>-->
